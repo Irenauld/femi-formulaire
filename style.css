@@ -1,0 +1,96 @@
+/* Reset de base pour enlever les marges par défaut */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f0f2f5; /* Couleur de fond douce */
+    display: flex;
+    justify-content: center; /* Centre horizontalement */
+    align-items: center; /* Centre verticalement */
+    min-height: 100vh; /* Prend toute la hauteur de l'écran */
+    padding: 20px;
+}
+
+/* Conteneur principal (la carte blanche) */
+.container {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 450px; /* Largeur maximale pour ne pas être trop large sur PC */
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Ombre douce */
+}
+
+header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+header h1 {
+    color: #333;
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+/* Style des groupes de formulaire */
+.form-group {
+    margin-bottom: 1.2rem;
+}
+
+label {
+    display: block; /* Le label prend sa propre ligne */
+    margin-bottom: 0.5rem;
+    color: #444;
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+/* Style commun pour tous les champs */
+input[type="text"],
+input[type="email"],
+input[type="date"],
+select {
+    width: 100%; /* Prend toute la largeur disponible */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s; /* Animation douce au clic */
+}
+
+/* Changement de couleur quand on clique dans le champ */
+input:focus,
+select:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+}
+
+/* Style du bouton */
+.btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff; /* Bleu moderne */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #0056b3; /* Bleu plus foncé au survol */
+}
+
+
